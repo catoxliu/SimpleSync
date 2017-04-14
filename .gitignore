@@ -1,0 +1,14 @@
+/Library/
+/Temp/
+/obj/
+/.vs/
+/FlatBuffers/
+/ProjectSettings/
+*.userprefs
+*.apk
+*.rar
+*.zip
+.gitattributes
+.gitreview
+*.csproj
+*.sln
