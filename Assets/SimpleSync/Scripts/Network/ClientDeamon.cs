@@ -52,6 +52,7 @@ namespace SimpleSync.Network
         {
             m_kClientSocket.EndConnect(iar);
             base.ConnectCallback(iar);
+            StartReceive();
         }
 
         protected override void Reconnect()

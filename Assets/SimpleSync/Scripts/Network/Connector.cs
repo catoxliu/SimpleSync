@@ -79,7 +79,8 @@ namespace SimpleSync.Network
 
         protected virtual void Reconnect()
         {
-            SyncManager.IsSyncStart = false;
+            SyncManager.IsD2ESyncStart = false;
+            SyncManager.IsE2DSyncStart = false;
         }
 
         protected void StartReceive()
@@ -159,7 +160,7 @@ namespace SimpleSync.Network
                     kMsgBodyStream = new MemoryStream(bodyBuff);
                 }
 
-                Debug.Log("Receive Message with type " + msgHead.m_usMsgType);
+                //Debug.Log("Receive Message with type " + msgHead.m_usMsgType);
 
                 if (m_kHandler != null)
                 {
